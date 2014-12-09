@@ -1,0 +1,3 @@
+a {
+	@include hoverer(color, $anchor-color, shade($anchor-color, 10%));
+}

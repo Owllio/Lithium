@@ -1,0 +1,29 @@
+.header {
+	height: $full-page-height;
+	background: #1A237E;
+	
+	h1 {
+		text-align: center;
+		margin: 0;
+		@include typography-scale(2, 0%);
+	}
+
+	h2 {
+		text-align: center;
+		margin: 0;
+		@include typography-scale(0, 0%);
+	}
+
+	.center-block {
+		@extend %vert-centerer;
+	}
+
+	.brand {
+		@include span(1/4);
+	}
+
+	.nav {
+		@include span(3/4);
+		@include typography-scale(0, 0%);
+	}
+}

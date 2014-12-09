@@ -1,0 +1,41 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,300,600);
+@import url(http://fonts.googleapis.com/css?family=Playfair+Display);
+
+$body-background-color: mix(#000, #FFF, 1%);
+$body-font-color: mix(#000, $body-background-color, 80%);
+$body-font-family: 'Roboto', Helvetica Neue,Helvetica,Arial,sans-serif; 
+$body-base-font-size: 16px;
+$line-height-ratio: 1.4;
+
+$font-weight-bold: 600;
+$font-weight-regular: 400;
+$font-weight-light: 300; 
+
+// Page
+$page-width: 80%;
+
+
+$heading-font-family: 'Playfair Display', $body-font-family; 
+$h1-weight: $font-weight-regular;
+$h1-color: 90%;
+
+$h2-weight: $font-weight-regular;
+$h2-color: 90%;
+
+$h3-weight: $font-weight-regular;
+$h3-color: 90%;
+
+$h4-weight: $font-weight-regular;
+$h4-color: 95%;
+
+$h5-weight: $font-weight-regular;
+$h5-color: 100%;
+
+$h6-weight: $font-weight-regular;
+$h6-color: 100%;
+
+// Full page
+$full-page-height: 60vh;
+
+// Anchor
+$anchor-color: #DD577A;

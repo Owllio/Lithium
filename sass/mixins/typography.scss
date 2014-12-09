@@ -1,0 +1,6 @@
+@mixin typography-scale($ratio, $shade) {
+	font-size: rem-calc(ms($ratio)); 
+	line-height: rem-calc(ms($ratio) * $line-height-ratio); 
+	color: mix($body-font-color, white, $shade);
+	font-family: $heading-font-family;
+}

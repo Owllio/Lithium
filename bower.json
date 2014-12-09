@@ -1,0 +1,29 @@
+{
+  "name": "Lithium",
+  "version": "0.0.0",
+  "authors": [
+    "claudiu.tasca@ferallabs.net"
+  ],
+  "description": "SASS Framework for Ferallabs",
+  "main": "index.html",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "font-awesome": "~4.2.0",
+    "jquery": "~2.1.1"
+  },
+  "devDependencies": {
+    "compass-breakpoint": "~2.5.0",
+    "animate.css-scss": "~3.1.0",
+    "juice": "~0.0.7",
+    "modular-scale": "~2.0.5",
+    "jeet": "~6.1.2"
+  }
+}
