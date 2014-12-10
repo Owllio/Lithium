@@ -1,0 +1,9 @@
+.button {
+	background-color: invert($primary-color);
+	color: $primary-color;
+	text-transform: uppercase;
+	padding: 10px 20px;
+	text-align: center;
+	display: block;
+	font-weight: bold;
+}

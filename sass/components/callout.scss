@@ -1,0 +1,33 @@
+.callout {
+	
+	text-align: center;
+	@extend .quiet;
+	@extend em;
+	margin-bottom: 200px;
+
+	@include breakpoint(0px 860px) {
+		@include typography-scale(0, $h2-color);
+	}
+
+	@include breakpoint(861px) {
+		@include center(90%);
+		@include typography-scale(1, $h2-color);
+	}
+
+	.text {
+		@include responsive-column(3/4, 3/4, 1, 1);
+		text-align: left !important;
+	}
+
+	.action {
+		@include responsive-column(1/4, 1/4, 1, 1);
+	}
+
+	h2 {
+		font-style: normal;
+	}
+
+	hr {
+		@include hr(100%, $primary-color, 1px);
+	}
+}

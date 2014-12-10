@@ -2,7 +2,7 @@
 @import "modular-scale";
 @import "font-awesome";
 @import "breakpoint";
-//@import "animate";
+@import "animate";
 @import "juice";
 @import "jeet/index";
 
@@ -27,3 +27,5 @@
 // Components
 @import "components/fullpage-header";
 @import "components/footer";
+@import "components/callout";
+@import "components/button";

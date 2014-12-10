@@ -1,27 +1,30 @@
+@import url(http://fonts.googleapis.com/css?family=Oxygen:400,300,600);
 @import url(http://fonts.googleapis.com/css?family=Roboto:400,300,600);
-@import url(http://fonts.googleapis.com/css?family=Roboto+Slab:400,300,600);
 
 $primary-color: #2F2B48;
 
-$body-background-color: mix(#000, #FFF, 1%);
-$body-font-color: mix(#000, $body-background-color, 90%);
-$body-font-family: 'Roboto', Helvetica Neue,Helvetica,Arial,sans-serif; 
+$body-background-color: mix(#000, #FFF, 3%);
+$body-font-color: mix(invert($body-background-color), $body-background-color, 80%);
+
+
+$body-font-family: 'Roboto', Helvetica Neue, Helvetica,Arial,sans-serif; 
 $body-text-align: left;
 
 $body-base-font-size: 16px;
-$line-height-ratio: 1.4;
+$line-height-ratio: 1.8;
 
 $font-weight-bold: 600;
 $font-weight-regular: 400;
 $font-weight-light: 300; 
 
 // Page
-$page-width: 80%;
+$page-width: 60%;
+$page-width-mobile: 80%;
 
 // Anchor
 $anchor-color: $primary-color;
 
-$heading-font-family: 'Roboto Slab', $body-font-family; 
+$heading-font-family: 'Oxygen', $body-font-family; 
 $h1-weight: $font-weight-regular;
 $h1-color: 90%;
 
@@ -41,7 +44,7 @@ $h6-weight: $font-weight-regular;
 $h6-color: 100%;
 
 // Full page
-$full-page-height: 80vh;
-$full-page-color: rgba($primary-color, 0.80);
+$full-page-height: 100vh;
+$full-page-color: rgba($primary-color, 0.7);
 $full-page-image: url('../img/header.jpeg');
 $full-page-margin: 0 0 10vh 0;

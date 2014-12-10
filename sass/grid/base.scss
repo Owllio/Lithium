@@ -1,3 +1,11 @@
 .page {
-	@include center($page-width);
+	@include breakpoint(0px 860px) {
+		@include center($page-width-mobile);
+	}
+
+	@include breakpoint(861px) {
+		@include center($page-width);
+	}
+
+	transition: 400ms all linear;
 }

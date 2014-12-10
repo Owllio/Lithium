@@ -1,22 +1,44 @@
 .header {
 	height: $full-page-height;
-	color: white;
+	color: white !important;
 	background-image: linear-gradient($full-page-color, $full-page-color ), $full-page-image;
 	background-size: cover;
+	background-position: center;
 	margin: $full-page-margin;
 
 	@include border-box-sizing();
 
+	.down-arrow {
+		display: block;
+		width: 100%;
+		margin-top: 20vh;
+		text-align: center;
+		font-size: 64px !important;
+		opacity: 0.9;
+		@include bounce($function: infinite);
+		//margin: 0 auto;
+	}
 	
 	h1 {
 		text-align: center;
 		margin: 0;
-		@include typography-scale(2, 0%);
+		color: white !important;
+
+		@include breakpoint($mobile-screen) {
+			@include typography-scale(2, 0%);
+		}
+
+		@include breakpoint($computer-screen) {
+			@include typography-scale(4, 0%);
+		}
+
+		
 	}
 
 	h2 {
 		text-align: center;
 		margin: 0;
+		color: white !important;
 		@include typography-scale(0, 0%);
 	}
 

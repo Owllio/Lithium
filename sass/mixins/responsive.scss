@@ -3,6 +3,9 @@ $screen-sm: 767px 991px;
 $screen-md: 992px 1199px;
 $screen-lg: 1200px;
 
+$mobile-screen: 0 990px;
+$computer-screen: 991px;
+
 @mixin responsive-column($lg, $md, $xs, $sm) {
 	@include breakpoint($screen-lg) {
 		@include col($lg);
