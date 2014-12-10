@@ -1,9 +1,13 @@
 @import url(http://fonts.googleapis.com/css?family=Roboto:400,300,600);
-@import url(http://fonts.googleapis.com/css?family=Playfair+Display);
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab:400,300,600);
+
+$primary-color: #2F2B48;
 
 $body-background-color: mix(#000, #FFF, 1%);
-$body-font-color: mix(#000, $body-background-color, 80%);
+$body-font-color: mix(#000, $body-background-color, 90%);
 $body-font-family: 'Roboto', Helvetica Neue,Helvetica,Arial,sans-serif; 
+$body-text-align: left;
+
 $body-base-font-size: 16px;
 $line-height-ratio: 1.4;
 
@@ -14,8 +18,10 @@ $font-weight-light: 300;
 // Page
 $page-width: 80%;
 
+// Anchor
+$anchor-color: $primary-color;
 
-$heading-font-family: 'Playfair Display', $body-font-family; 
+$heading-font-family: 'Roboto Slab', $body-font-family; 
 $h1-weight: $font-weight-regular;
 $h1-color: 90%;
 
@@ -35,7 +41,7 @@ $h6-weight: $font-weight-regular;
 $h6-color: 100%;
 
 // Full page
-$full-page-height: 60vh;
-
-// Anchor
-$anchor-color: #DD577A;
+$full-page-height: 80vh;
+$full-page-color: rgba($primary-color, 0.80);
+$full-page-image: url('../img/header.jpeg');
+$full-page-margin: 0 0 10vh 0;

@@ -1,0 +1,52 @@
+$screen-xs: 0 767px;
+$screen-sm: 767px 991px;
+$screen-md: 992px 1199px;
+$screen-lg: 1200px;
+
+@mixin responsive-column($lg, $md, $xs, $sm) {
+	@include breakpoint($screen-lg) {
+		@include col($lg);
+	}
+
+	@include breakpoint($screen-md) {
+		@include col($md);
+	}
+
+	@include breakpoint($screen-xs) {
+		@include col($xs);
+	}
+
+	@include breakpoint($screen-sm) {
+		@include col($sm);
+	}
+}
+
+@mixin responsive-span($lg, $md, $xs, $sm) {
+	@include breakpoint($screen-lg) {
+		@include span($lg);
+	}
+
+	@include breakpoint($screen-md) {
+		@include span($md);
+	}
+
+	@include breakpoint($screen-xs) {
+		@include span($xs);
+	}
+
+	@include breakpoint($screen-sm) {
+		@include span($sm);
+	}
+}
+
+@mixin responsive-hide($size) {
+	@include breakpoint($size) {
+		display: none;
+	}
+}
+
+@mixin responsive-show($size) {
+	@include breakpoint($size) {
+		display: block;
+	}
+}

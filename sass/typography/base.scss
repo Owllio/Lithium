@@ -11,11 +11,15 @@ body {
 }
 
 p {
-	text-align: justify;
+	text-align: $body-text-align;
 }
 
 strong, b {
 	font-weight: $font-weight-bold;
+}
+
+.quiet {
+	color: tint($body-font-color, 30%);
 }
 
 em, i {
@@ -51,3 +55,4 @@ h1 {
 }
 
 @import "anchor";
+@import "headings";

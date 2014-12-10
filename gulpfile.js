@@ -36,3 +36,7 @@ gulp.task('watch', function() {
         gulp.start('styles');
     });
 });
+
+gulp.task('default', function() {
+    gulp.start('scripts', 'styles', 'fontawesome');
+});

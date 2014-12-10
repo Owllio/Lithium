@@ -1,0 +1,26 @@
+h5 { 
+	@include typography-scale(1, $h5-color);
+	font-weight: $h5-weight;
+}
+
+h4 { 
+	@include typography-scale(2, $h4-color);
+	font-weight: $h4-weight;
+}
+
+h3 { 
+	@include typography-scale(3, $h3-color);
+	font-weight: $h3-weight;
+}
+
+h2 { 
+	@include typography-scale(4, $h2-color);
+	font-weight: $h2-weight;
+	letter-spacing: -1px;
+}
+
+h1 { 
+	@include typography-scale(5, $h1-color);
+	font-weight: $h1-weight;
+	letter-spacing: -2px;
+}
