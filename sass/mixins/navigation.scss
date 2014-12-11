@@ -10,3 +10,109 @@
 		}
 	}
 }
+
+@mixin stripped-button($bg) {
+  @include breakpoint($computer-screen) {
+  	width: auto;
+  }
+
+   @include breakpoint($mobile-screen) {
+   	margin-top: 20px;
+   	margin-bottom: 20px;
+  	width: 100%;
+  }
+
+  
+  @include border-box-sizing();
+  padding: 0.5em 1.0em;
+
+  box-shadow: 0 0 0 2px rgba($bg, 0.8);
+  display: inline-block;
+
+  &:hover {
+  	color: $bg !important;
+  	box-shadow: 0 0 0 2px $bg;
+  }
+
+  font: {
+  	weight: $font-weight-bold;
+  }
+
+  @include typography-scale(-1, $h2-color);
+  color: rgba($bg, 0.8) !important;
+
+  border-radius: 1px;
+
+  text:{
+  	align: center;
+    transform: uppercase;
+    decoration: none;
+  }
+
+  //border-bottom: .2em solid darken($bg, 7);
+  position: relative;
+      
+  &:before, &:after{
+    display: inline-block;
+    font-family: entypo;
+    position: absolute;    
+  }
+}
+
+@mixin button($bg){
+  $color: black;
+  width: 100%;
+  @include border-box-sizing();
+  padding: 0.5em 1.0em;
+  /*
+  Setting the color based on the background, as described above (1)
+  */ 
+  @if lightness($bg) > 68% {
+    $color: desaturate(darken($bg, 35), 70);
+    &:hover, &:focus {
+      background: darken($bg, 5);
+      color: darken($color, 5);
+    }
+  }
+  @else {
+    $color: lighten($bg, 35);
+    &:hover, &:focus {
+      background: darken($bg, 5);
+      color: lighten($color, 5);
+    }
+  }
+   
+  color: $color;
+  display: inline-block;
+  background: $bg;
+  //@include transition(.3s);
+
+  font-style: regular !important;
+
+  font:{
+    family: sans-serif;
+    weight: 800;
+    size: .8em;
+  }
+  text:{
+    transform: uppercase;
+    decoration: none;
+  }
+
+  border-bottom: .2em solid darken($bg, 7);
+  position: relative;
+      
+  &:before, &:after{
+    display: inline-block;
+    font-family: entypo;
+    position: absolute;    
+  }
+          
+  &:active {
+  //  @include transform(scale(.92));
+  }
+
+  &:hover, &:focus {
+    //box-shadow: 0 0 0 5px lighten($bg, 20);
+  }
+}

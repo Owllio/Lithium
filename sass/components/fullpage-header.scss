@@ -11,7 +11,7 @@
 	.down-arrow {
 		display: block;
 		width: 100%;
-		margin-top: 20vh;
+		margin-top: 10vh;
 		text-align: center;
 		font-size: 64px !important;
 		opacity: 0.9;
@@ -99,7 +99,7 @@
 			border: 2px solid transparent;
 			transition: 400ms border linear;
 			text-transform: uppercase;
-			font-weight: bold;
+			font-weight: $font-weight-regular;
 
 			&:hover {
 				color: white;

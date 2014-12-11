@@ -1,8 +1,6 @@
 .callout {
 	
 	text-align: center;
-	@extend .quiet;
-	@extend em;
 	margin-bottom: 200px;
 
 	@include breakpoint(0px 860px) {
@@ -16,11 +14,14 @@
 
 	.text {
 		@include responsive-column(3/4, 3/4, 1, 1);
+		@extend .quiet;
+		@extend em;
 		text-align: left !important;
 	}
 
 	.action {
 		@include responsive-column(1/4, 1/4, 1, 1);
+		margin-top: 10%;
 	}
 
 	h2 {

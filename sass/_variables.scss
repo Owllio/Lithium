@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Oxygen:400,300,600);
+@import url(http://fonts.googleapis.com/css?family=Alegreya:400,300,600);
 @import url(http://fonts.googleapis.com/css?family=Roboto:400,300,600);
 
 $primary-color: #2F2B48;
@@ -7,7 +7,7 @@ $body-background-color: mix(#000, #FFF, 3%);
 $body-font-color: mix(invert($body-background-color), $body-background-color, 80%);
 
 
-$body-font-family: 'Roboto', Helvetica Neue, Helvetica,Arial,sans-serif; 
+$body-font-family: 'Alegreya+Sans', Helvetica Neue, Helvetica,Arial,sans-serif; 
 $body-text-align: left;
 
 $body-base-font-size: 16px;
@@ -18,13 +18,13 @@ $font-weight-regular: 400;
 $font-weight-light: 300; 
 
 // Page
-$page-width: 60%;
-$page-width-mobile: 80%;
+$page-width: 80%;
+$page-width-mobile: 90%;
 
 // Anchor
 $anchor-color: $primary-color;
 
-$heading-font-family: 'Oxygen', $body-font-family; 
+$heading-font-family: 'Alegreya Sans', $body-font-family; 
 $h1-weight: $font-weight-regular;
 $h1-color: 90%;
 
@@ -44,7 +44,7 @@ $h6-weight: $font-weight-regular;
 $h6-color: 100%;
 
 // Full page
-$full-page-height: 100vh;
-$full-page-color: rgba($primary-color, 0.7);
+$full-page-height: 70vh;
+$full-page-color: rgba(black, 0.3);
 $full-page-image: url('../img/header.jpeg');
 $full-page-margin: 0 0 10vh 0;
