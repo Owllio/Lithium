@@ -3,7 +3,8 @@ var gulp = require('gulp'),
     minifycss = require('gulp-minify-css'),
     rename = require('gulp-rename'),
     watch = require('gulp-watch'),
-    concat = require('gulp-concat');
+    concat = require('gulp-concat'),
+    zip = require('gulp-zip');
 
 gulp.task('scripts', function() {
   gulp.src(['./bower_components/jquery/dist/jquery.min.js'])
@@ -35,6 +36,13 @@ gulp.task('watch', function() {
     watch('**/*.scss', function () {
         gulp.start('styles');
     });
+});
+
+gulp.task('build-zip', function () {
+    gulp.start('default');
+    return gulp.src('dist/*')
+        .pipe(zip('lithium.zip'))
+        .pipe(gulp.dest('.'));
 });
 
 gulp.task('default', function() {

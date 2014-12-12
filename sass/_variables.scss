@@ -44,7 +44,10 @@ $h6-weight: $font-weight-regular;
 $h6-color: 100%;
 
 // Full page
-$full-page-height: 70vh;
-$full-page-color: rgba($primary-color, 0.8);
+$full-page-height: 80vh;
+$full-page-color: rgba($primary-color, 0.5);
 $full-page-image: url('../img/header.jpeg');
 $full-page-margin: 0 0 10vh 0;
+
+// Footer Columns
+$footer-columns: 3;

@@ -3,7 +3,7 @@
 	line-height: rem-calc(ms($ratio) * $line-height-ratio); 
 	
 
-	color: $body-font-color;
+	color: shade($body-font-color, $shade);
 	font-family: $heading-font-family;
 }
 

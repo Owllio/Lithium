@@ -34,14 +34,14 @@
 }
 
 .projects {
-	height: 400px;
+	//height: 400px;
 	overflow: hidden;
 
 	img {
 		@include responsive-span(1/4, 1/4, 1/2, 1/2); 
-		opacity: 0.5;
-		-webkit-filter: grayscale(1); -webkit-filter: grayscale(100%); -moz-filter: grayscale(100%);
-		filter: gray; filter: grayscale(100%);
+		opacity: 0.8;
+		-webkit-filter: grayscale(0.8); -webkit-filter: grayscale(80%); -moz-filter: grayscale(80%);
+		filter: gray; filter: grayscale(80%);
 		transition: 400ms all linear;
 
 		&:hover {
