@@ -14,3 +14,9 @@
 	margin-top: 50px;
 	margin-bottom: 50px;
 }
+
+%smoothed-font {
+	-webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+}

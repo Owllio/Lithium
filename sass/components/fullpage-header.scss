@@ -20,16 +20,17 @@
 	}
 	
 	h1 {
-		text-align: center;
 		margin: 0;
 		color: white !important;
 
 		@include breakpoint($mobile-screen) {
 			@include typography-scale(2, 0%);
+			text-align: left;
 		}
 
 		@include breakpoint($computer-screen) {
 			@include typography-scale(4, 0%);
+			text-align: center;
 		}
 
 		
@@ -40,6 +41,14 @@
 		margin: 0;
 		color: white !important;
 		@include typography-scale(0, 0%);
+
+		@include breakpoint($mobile-screen) {
+			text-align: left;
+		}
+
+		@include breakpoint($computer-screen) {
+			text-align: center;
+		}
 	}
 
 	.top-navigation {
@@ -65,12 +74,16 @@
 
 	.brand {
 		//margin-top: 40px;
-		@include span(1/4);
+		@include span(1/5);
+
+		img {
+			width: 120px;
+		}
 	}
 
 	.nav {
 		//margin-top: 40px;
-		@include span(3/4);
+		@include span(4/5);
 		@include typography-scale(0, 0%);
 		@include nav-base-inline();
 		text-align: right;
